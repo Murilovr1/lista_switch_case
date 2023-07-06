@@ -5,9 +5,17 @@
     */
 
     //ENTRADA
-
+    const num = prompt("Insira um número.");
     
     //PROCESSAMENTO
+    switch (num % 2) {
+        case 0:
+            document.write(`O número ${num} é par.`);
+            break;
+            default:
+                document.write(`O número ${num} é ìmpar.`);
+                break;
+    }
 
     
     //SAÍDA

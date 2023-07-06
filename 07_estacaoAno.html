@@ -6,11 +6,133 @@
     */
 
     //ENTRADA
+    const hemis = prompt("Em qual Hemisfério você vive?N(norte) ou S(sul)?");
+    const mês = prompt("Qual o mês atual onde você mora?");
 
-    
     //PROCESSAMENTO
 
+    switch (hemis) {
+        case "N":
+            switch (mês) {
+                case "Junho":
+                case "julho":
+                case "Agosto":
+                case "Setembro":
 
-    //SAÍDA
+                    document.write("Aí está a fazer Verão.");
+
+                    break;
+
+                    case "Novembro":
+                    case "Dezembro":
+
+                    document.write("Aí atualmente é Outono.");
+
+                    break;
+
+                    case "Janeiro":
+                    case "Fevereiro":
+                    case "Março":
+
+                    document.write("Aí agora é Inverno.");
+
+                    break;          
+                    
+                    switch (mês) {
+                case "Junho":
+                case "julho":
+                case "Agosto":
+                case "Setembro":
+
+                    document.write("Aí está a fazer Verão.");
+
+                    break;
+
+                    case "Novembro":
+                    case "Dezembro":
+
+                    document.write("Aí atualmente é Outono.");
+
+                    break;
+
+                    case "Janeiro":
+                    case "Fevereiro":
+                    case "Março":
+
+                    document.write("Aí agora é Inverno.");
+
+                    break;
+
+                    case "Abril":
+                    case "Maio":
+                    
+                    document.write("Aí atualmente é Primavera.")
+                    break;
+
+            
+                default:
+                    document.write("Insira um mês válido.")
+                    break;
+            }
+            
+
+                    case "Abril":
+                    case "Maio":
+                    
+                    document.write("Aí atualmente é Primavera.")
+                    break;
+
+            
+                default:
+                    document.write("Insira um mês válido.")
+                    break;
+            }
+            
+            break;
+
+            case "S":
+            switch (mês) {
+                case "Dezembro":
+                case "Janeiro":
+                case "Fevereiro":
+                case "Março":
+
+                    document.write("Aí está a fazer Verão.");
+
+                    break;
+
+                    case "Abril":
+                    case "Maio":
+                    case "Junho":
+
+                    document.write("Aí atualmente é Outono.");
+
+                    break;
+
+                    case "Julho":
+                    case "Agosto":
+                    case "Setembro":
+
+                    document.write("Aí agora é Inverno.");
+
+                    break;
+
+                    case "Novembro":
+                    
+                    document.write("Aí atualmente é Primavera.")
+                    break;
+
+            
+                default:
+                    document.write("Insira um mês válido.")
+                    break;
+            }
+            
+            break;
+
+        default:
+            document.write("Isnira S ou N, por favor.")
+            break;
+    }
 
 </script>

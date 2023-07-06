@@ -11,11 +11,81 @@
     */
 
     //ENTRADA
+    const perg1 = prompt("Telefonou para a vítima? Responda com S ou N!").toUpperCase();
+    const perg2 = prompt("Esteve no local do crime? Responda com S ou N!").toUpperCase();
+    const perg3 = prompt("Mora perto da vítima? Responda com S ou N!").toUpperCase();
+    const perg4 = prompt("Devia para a vítima? Responda com S ou N!").toUpperCase();
+    const perg5 = prompt("Já trabalhou com a vítima? Responda com S ou N!").toUpperCase();
+    let resposta = 0;
 
-    
     //PROCESSAMENTO
 
-
+    switch (perg1){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: 
+        resposta = resposta;
+        break;alert(resposta)
+    }
+    switch (perg2){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: 
+        resposta = resposta;
+        break;
+    }
+    switch (perg3){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: 
+        resposta = resposta;
+        break;
+    }
+    switch (perg3){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: 
+        resposta = resposta;
+        break;
+    }
+    switch (perg4){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: 
+        resposta = resposta;
+        break;
+    }
+    switch (perg5){
+        case "S":
+        resposta = resposta++;
+        break;
+        default: break;
+        resposta = resposta;
+        break;
+    }
+    switch (resposta == 2){
+        case true: 
+        alert(`Suspeito`);
+    }
+    switch (resposta == 3 || resposta == 4){
+        case true: 
+        alert(`Cúmplice`);
+    }
+    switch (resposta == 5){
+        case true: 
+        alert(`Assasino`);
+    }
+    switch (resposta == 0 || resposta == 1){
+        case true: 
+        alert(`Inocente`);
+    }
+    
+    alert(resposta)
     //SAÍDA
 
 </script>

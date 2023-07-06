@@ -9,10 +9,135 @@
 
     //ENTRADA
 
+    const num = Number(prompt("Informe um número!"));
+    const num2 = Number(prompt("Informe outro número!"));
+    const operação = prompt("Informe qual operação deseja realizar, Responda com (+ ou - ou * ou /):");
+    let mensagemFinal = `O resultado é `
 
     //PROCESSAMENTO
+    switch (operação) {
+        case "+":
+            let total = num + num2;
+            mensagemFinal = mensagemFinal + `${total}, sendo ele:`;
+            switch (total % 2) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Par,`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Ímpar,`;
+                    break;
+            }
+            switch (total % 1) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Inteiro e`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Decimal e`;
+                    break;
+            }
+            switch (total >= 0) {
+                case true:
+                    mensagemFinal = mensagemFinal + ` Positivo.`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Negativo.`;
+                    break;
+            }
+            alert(mensagemFinal)
+    }
+    switch (operação) {
+        case "-":
+            let total = num - num2;
+            mensagemFinal = mensagemFinal + `${total}, sendo ele:`;
+            switch (total % 2) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Par,`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Ímpar,`;
+                    break;
+            }
+            switch (total % 1) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Inteiro e`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Decimal e`;
+                    break;
+            }
+            switch (total >= 0) {
+                case true:
+                    mensagemFinal = mensagemFinal + ` Positivo.`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Negativo.`;
+                    break;
+            }
+            alert(mensagemFinal)
+    }
+    switch (operação) {
+        case "*":
+            let total = num * num2;
+            mensagemFinal = mensagemFinal + `${total}, sendo ele:`;
+            switch (total % 2) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Par,`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Ímpar,`;
+                    break;
+            }
+            switch (total % 1) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Inteiro e`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Decimal e`;
+                    break;
+            }
+            switch (total >= 0) {
+                case true:
+                    mensagemFinal = mensagemFinal + ` Positivo.`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Negativo.`;
+                    break;
+            }
+            alert(mensagemFinal)
+    }
+    switch (operação) {
+        case "/":
+            let total = num / num2;
+            mensagemFinal = mensagemFinal + `${total}, sendo ele:`;
+            switch (total % 2) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Par,`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Ímpar,`;
+                    break;
+            }
+            switch (total % 1) {
+                case 0:
+                    mensagemFinal = mensagemFinal + ` Inteiro e`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Decimal e`;
+                    break;
+            }
+            switch (total >= 0) {
+                case true:
+                    mensagemFinal = mensagemFinal + ` Positivo.`;
+                    break;
+                default:
+                    mensagemFinal = mensagemFinal + ` Negativo.`;
+                    break;
+            }
+            alert(mensagemFinal)
+    }
 
-    
+
+
     //SAÍDA
 
 </script>
